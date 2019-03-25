@@ -107,7 +107,6 @@ namespace GB_Student_Portal
         public class Admin
         {
             [Key]
-            public int AdminID { get; set; }
             public string AdminKullaniciAdi { get; set; }
             public string AdminSifre { get; set; }
             public int YetkiNumarasi { get; set; }

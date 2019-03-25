@@ -16,3 +16,21 @@ C:\Users\badgo\Desktop\GB-Student.Portal\GB-Student-Portal\GB-Student-Portal\obj
 C:\Users\badgo\Desktop\GB-Student.Portal\GB-Student-Portal\GB-Student-Portal\obj\Debug\GB_Student_Portal.GirisYap.resources
 C:\Users\badgo\Desktop\GB-Student.Portal\GB-Student-Portal\GB-Student-Portal\obj\Debug\GB_Student_Portal.AnaMenu_Admin.resources
 C:\Users\badgo\Desktop\GB-Student.Portal\GB-Student-Portal\GB-Student-Portal\obj\Debug\GB_Student_Portal.Admin_SistemeKayitEkle.resources
+C:\Users\badgo\Desktop\Bitmemiş Projeler C#\GB-Student.Portal\GB-Student-Portal\GB-Student-Portal\obj\Debug\GB-Student-Portal.csprojAssemblyReference.cache
+C:\Users\badgo\Desktop\Bitmemiş Projeler C#\GB-Student.Portal\GB-Student-Portal\GB-Student-Portal\obj\Debug\GB_Student_Portal.Admin_SistemeKayitEkle.resources
+C:\Users\badgo\Desktop\Bitmemiş Projeler C#\GB-Student.Portal\GB-Student-Portal\GB-Student-Portal\obj\Debug\GB_Student_Portal.AnaMenu_Admin.resources
+C:\Users\badgo\Desktop\Bitmemiş Projeler C#\GB-Student.Portal\GB-Student-Portal\GB-Student-Portal\obj\Debug\GB_Student_Portal.GirisYap.resources
+C:\Users\badgo\Desktop\Bitmemiş Projeler C#\GB-Student.Portal\GB-Student-Portal\GB-Student-Portal\obj\Debug\GB_Student_Portal.VeritabaniOlusturma.resources
+C:\Users\badgo\Desktop\Bitmemiş Projeler C#\GB-Student.Portal\GB-Student-Portal\GB-Student-Portal\obj\Debug\GB_Student_Portal.Properties.Resources.resources
+C:\Users\badgo\Desktop\Bitmemiş Projeler C#\GB-Student.Portal\GB-Student-Portal\GB-Student-Portal\obj\Debug\GB-Student-Portal.csproj.GenerateResource.cache
+C:\Users\badgo\Desktop\Bitmemiş Projeler C#\GB-Student.Portal\GB-Student-Portal\GB-Student-Portal\obj\Debug\GB-Student-Portal.csproj.CoreCompileInputs.cache
+C:\Users\badgo\Desktop\Bitmemiş Projeler C#\GB-Student.Portal\GB-Student-Portal\GB-Student-Portal\obj\Debug\GB-Student-Portal.exe
+C:\Users\badgo\Desktop\Bitmemiş Projeler C#\GB-Student.Portal\GB-Student-Portal\GB-Student-Portal\obj\Debug\GB-Student-Portal.pdb
+C:\Users\badgo\Desktop\Bitmemiş Projeler C#\GB-Student.Portal\GB-Student-Portal\GB-Student-Portal\bin\Debug\GB-Student-Portal.exe.config
+C:\Users\badgo\Desktop\Bitmemiş Projeler C#\GB-Student.Portal\GB-Student-Portal\GB-Student-Portal\bin\Debug\GB-Student-Portal.exe
+C:\Users\badgo\Desktop\Bitmemiş Projeler C#\GB-Student.Portal\GB-Student-Portal\GB-Student-Portal\bin\Debug\GB-Student-Portal.pdb
+C:\Users\badgo\Desktop\Bitmemiş Projeler C#\GB-Student.Portal\GB-Student-Portal\GB-Student-Portal\bin\Debug\EntityFramework.dll
+C:\Users\badgo\Desktop\Bitmemiş Projeler C#\GB-Student.Portal\GB-Student-Portal\GB-Student-Portal\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\badgo\Desktop\Bitmemiş Projeler C#\GB-Student.Portal\GB-Student-Portal\GB-Student-Portal\bin\Debug\EntityFramework.xml
+C:\Users\badgo\Desktop\Bitmemiş Projeler C#\GB-Student.Portal\GB-Student-Portal\GB-Student-Portal\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\badgo\Desktop\Bitmemiş Projeler C#\GB-Student.Portal\GB-Student-Portal\GB-Student-Portal\obj\Debug\GB-Student-Portal.csproj.CopyComplete

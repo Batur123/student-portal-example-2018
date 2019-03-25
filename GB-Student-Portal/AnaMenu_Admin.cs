@@ -21,5 +21,19 @@ namespace GB_Student_Portal
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Admin_SistemeKayitEkle a = new Admin_SistemeKayitEkle();
+            a.Show();
+            this.Hide();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Admin_KayitlariGoster a = new Admin_KayitlariGoster();
+            a.Show();
+            this.Hide();
+        }
     }
 }

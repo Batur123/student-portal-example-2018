@@ -54,10 +54,7 @@ namespace GB_Student_Portal
             {
 
             }
-            else
-            {
-                MessageBox.Show("Seçim yapmadınız!!!");
-            }
+
         }
 
         private void memurcheck_CheckedChanged(object sender, EventArgs e)
