@@ -12,8 +12,8 @@ namespace GB_Student_Portal
     public class PClassGirisIslemi
     { 
 
-        VeritabaniOlusturma.ProjeVeritabani db = new VeritabaniOlusturma.ProjeVeritabani();
-        public Class_Admin AdminGiris(string KullaniciAdi,string Sifre)
+        VeritabaniOlusturma.ProjeVeritabani db = new VeritabaniOlusturma.ProjeVeritabani(); //Database Erişimi - Erişim Yeri-> Veritabanı Oluşturma Formu
+        public Class_Admin AdminGiris(string KullaniciAdi,string Sifre) //Admin Girişi 
         {
             Class_Admin kisi = null;
             try
@@ -55,7 +55,7 @@ namespace GB_Student_Portal
             return kisi;
         }
         
-        public Class_Akademisyen AkademiGiris(string KullaniciAdi, string Sifre)
+        public Class_Akademisyen AkademiGiris(string KullaniciAdi, string Sifre) //Akademisyen Girişi
         {
             Class_Akademisyen kisi = null;
             try
@@ -97,7 +97,7 @@ namespace GB_Student_Portal
             return kisi;
         }
 
-        public Class_Ogrenci OgrenciGiris(string KullaniciAdi, string Sifre)
+        public Class_Ogrenci OgrenciGiris(string KullaniciAdi, string Sifre) //Öğrenci Gİrişi
         {
             Class_Ogrenci kisi = null;
             try
@@ -139,7 +139,7 @@ namespace GB_Student_Portal
             return kisi;
         }
 
-        public Class_Memur MemurGiris(string KullaniciAdi, string Sifre)
+        public Class_Memur MemurGiris(string KullaniciAdi, string Sifre) //Memur Girişi
         {
             Class_Memur kisi = null;
             try

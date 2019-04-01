@@ -44,35 +44,36 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tckimliknobox = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.kayitnobox = new System.Windows.Forms.TextBox();
+            this.siranobox = new System.Windows.Forms.TextBox();
+            this.ailesiranobox = new System.Windows.Forms.TextBox();
+            this.serinobox = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.KanGrubuCombobox = new System.Windows.Forms.ComboBox();
+            this.kimliknobox = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.ciltnobox = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.bolumcombobox = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // GirisButon
             // 
             this.GirisButon.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.GirisButon.Location = new System.Drawing.Point(619, 365);
+            this.GirisButon.Location = new System.Drawing.Point(592, 344);
             this.GirisButon.Name = "GirisButon";
             this.GirisButon.Size = new System.Drawing.Size(171, 36);
             this.GirisButon.TabIndex = 14;
             this.GirisButon.Text = "Sisteme Kaydet";
             this.GirisButon.UseVisualStyleBackColor = true;
+            this.GirisButon.Click += new System.EventHandler(this.GirisButon_Click);
             // 
             // KSifreBox
             // 
@@ -95,10 +96,10 @@
             // memurcheck
             // 
             this.memurcheck.AutoSize = true;
-            this.memurcheck.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.memurcheck.Location = new System.Drawing.Point(318, 291);
+            this.memurcheck.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.memurcheck.Location = new System.Drawing.Point(592, 284);
             this.memurcheck.Name = "memurcheck";
-            this.memurcheck.Size = new System.Drawing.Size(73, 20);
+            this.memurcheck.Size = new System.Drawing.Size(94, 28);
             this.memurcheck.TabIndex = 18;
             this.memurcheck.Text = "Memur";
             this.memurcheck.UseVisualStyleBackColor = true;
@@ -107,10 +108,10 @@
             // hocacheck
             // 
             this.hocacheck.AutoSize = true;
-            this.hocacheck.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.hocacheck.Location = new System.Drawing.Point(318, 314);
+            this.hocacheck.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.hocacheck.Location = new System.Drawing.Point(592, 310);
             this.hocacheck.Name = "hocacheck";
-            this.hocacheck.Size = new System.Drawing.Size(121, 20);
+            this.hocacheck.Size = new System.Drawing.Size(154, 28);
             this.hocacheck.TabIndex = 19;
             this.hocacheck.Text = "Akademisyen";
             this.hocacheck.UseVisualStyleBackColor = true;
@@ -222,15 +223,14 @@
             this.label6.TabIndex = 32;
             this.label6.Text = "TC Kimlik No:";
             // 
-            // textBox1
+            // tckimliknobox
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textBox1.Location = new System.Drawing.Point(155, 9);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(148, 26);
-            this.textBox1.TabIndex = 11;
-            this.textBox1.Text = "12345675435";
+            this.tckimliknobox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.tckimliknobox.Location = new System.Drawing.Point(155, 9);
+            this.tckimliknobox.Multiline = true;
+            this.tckimliknobox.Name = "tckimliknobox";
+            this.tckimliknobox.Size = new System.Drawing.Size(148, 26);
+            this.tckimliknobox.TabIndex = 11;
             // 
             // label7
             // 
@@ -272,41 +272,41 @@
             this.label10.TabIndex = 36;
             this.label10.Text = "Kayıt No:";
             // 
-            // textBox2
+            // kayitnobox
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textBox2.Location = new System.Drawing.Point(155, 183);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(148, 26);
-            this.textBox2.TabIndex = 40;
+            this.kayitnobox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.kayitnobox.Location = new System.Drawing.Point(155, 183);
+            this.kayitnobox.Multiline = true;
+            this.kayitnobox.Name = "kayitnobox";
+            this.kayitnobox.Size = new System.Drawing.Size(148, 26);
+            this.kayitnobox.TabIndex = 40;
             // 
-            // textBox3
+            // siranobox
             // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textBox3.Location = new System.Drawing.Point(155, 154);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(148, 26);
-            this.textBox3.TabIndex = 39;
+            this.siranobox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.siranobox.Location = new System.Drawing.Point(155, 154);
+            this.siranobox.Multiline = true;
+            this.siranobox.Name = "siranobox";
+            this.siranobox.Size = new System.Drawing.Size(148, 26);
+            this.siranobox.TabIndex = 39;
             // 
-            // textBox4
+            // ailesiranobox
             // 
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textBox4.Location = new System.Drawing.Point(155, 125);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(148, 26);
-            this.textBox4.TabIndex = 38;
+            this.ailesiranobox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.ailesiranobox.Location = new System.Drawing.Point(155, 125);
+            this.ailesiranobox.Multiline = true;
+            this.ailesiranobox.Name = "ailesiranobox";
+            this.ailesiranobox.Size = new System.Drawing.Size(148, 26);
+            this.ailesiranobox.TabIndex = 38;
             // 
-            // textBox5
+            // serinobox
             // 
-            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textBox5.Location = new System.Drawing.Point(155, 38);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(148, 26);
-            this.textBox5.TabIndex = 37;
+            this.serinobox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.serinobox.Location = new System.Drawing.Point(155, 38);
+            this.serinobox.Multiline = true;
+            this.serinobox.Name = "serinobox";
+            this.serinobox.Size = new System.Drawing.Size(148, 26);
+            this.serinobox.TabIndex = 37;
             // 
             // label11
             // 
@@ -318,23 +318,23 @@
             this.label11.TabIndex = 41;
             this.label11.Text = "Kan Grubu:";
             // 
-            // comboBox1
+            // KanGrubuCombobox
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(155, 212);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(148, 32);
-            this.comboBox1.TabIndex = 43;
+            this.KanGrubuCombobox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.KanGrubuCombobox.FormattingEnabled = true;
+            this.KanGrubuCombobox.Location = new System.Drawing.Point(155, 212);
+            this.KanGrubuCombobox.Name = "KanGrubuCombobox";
+            this.KanGrubuCombobox.Size = new System.Drawing.Size(148, 32);
+            this.KanGrubuCombobox.TabIndex = 43;
             // 
-            // textBox6
+            // kimliknobox
             // 
-            this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textBox6.Location = new System.Drawing.Point(155, 67);
-            this.textBox6.Multiline = true;
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(148, 26);
-            this.textBox6.TabIndex = 45;
+            this.kimliknobox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.kimliknobox.Location = new System.Drawing.Point(155, 67);
+            this.kimliknobox.Multiline = true;
+            this.kimliknobox.Name = "kimliknobox";
+            this.kimliknobox.Size = new System.Drawing.Size(148, 26);
+            this.kimliknobox.TabIndex = 45;
             // 
             // label12
             // 
@@ -346,14 +346,14 @@
             this.label12.TabIndex = 44;
             this.label12.Text = "Kimlik No:";
             // 
-            // textBox7
+            // ciltnobox
             // 
-            this.textBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textBox7.Location = new System.Drawing.Point(155, 96);
-            this.textBox7.Multiline = true;
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(148, 26);
-            this.textBox7.TabIndex = 47;
+            this.ciltnobox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.ciltnobox.Location = new System.Drawing.Point(155, 96);
+            this.ciltnobox.Multiline = true;
+            this.ciltnobox.Name = "ciltnobox";
+            this.ciltnobox.Size = new System.Drawing.Size(148, 26);
+            this.ciltnobox.TabIndex = 47;
             // 
             // label13
             // 
@@ -375,38 +375,38 @@
             this.label14.TabIndex = 49;
             this.label14.Text = "Bölüm:";
             // 
-            // textBox8
+            // bolumcombobox
             // 
-            this.textBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textBox8.Location = new System.Drawing.Point(623, 176);
-            this.textBox8.Multiline = true;
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(140, 27);
-            this.textBox8.TabIndex = 48;
+            this.bolumcombobox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.bolumcombobox.FormattingEnabled = true;
+            this.bolumcombobox.Location = new System.Drawing.Point(623, 175);
+            this.bolumcombobox.Name = "bolumcombobox";
+            this.bolumcombobox.Size = new System.Drawing.Size(140, 32);
+            this.bolumcombobox.TabIndex = 50;
             // 
             // Admin_SistemeKayitEkle
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(802, 419);
+            this.ClientSize = new System.Drawing.Size(769, 385);
+            this.Controls.Add(this.bolumcombobox);
             this.Controls.Add(this.label14);
-            this.Controls.Add(this.textBox8);
-            this.Controls.Add(this.textBox7);
+            this.Controls.Add(this.ciltnobox);
             this.Controls.Add(this.label13);
-            this.Controls.Add(this.textBox6);
+            this.Controls.Add(this.kimliknobox);
             this.Controls.Add(this.label12);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.KanGrubuCombobox);
             this.Controls.Add(this.label11);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.kayitnobox);
+            this.Controls.Add(this.siranobox);
+            this.Controls.Add(this.ailesiranobox);
+            this.Controls.Add(this.serinobox);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.tckimliknobox);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label5);
@@ -448,22 +448,22 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tckimliknobox;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox kayitnobox;
+        private System.Windows.Forms.TextBox siranobox;
+        private System.Windows.Forms.TextBox ailesiranobox;
+        private System.Windows.Forms.TextBox serinobox;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.ComboBox KanGrubuCombobox;
+        private System.Windows.Forms.TextBox kimliknobox;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox ciltnobox;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.ComboBox bolumcombobox;
     }
 }

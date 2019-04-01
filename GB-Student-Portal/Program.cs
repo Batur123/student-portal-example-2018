@@ -16,7 +16,7 @@ namespace GB_Student_Portal
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Admin_SistemeKayitEkle());
+            Application.Run(new AnaMenu_Admin());
         }
     }
 }

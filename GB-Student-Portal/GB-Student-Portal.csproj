@@ -53,6 +53,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin_BolumEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_BolumEkle.Designer.cs">
+      <DependentUpon>Admin_BolumEkle.cs</DependentUpon>
+    </Compile>
     <Compile Include="Admin_SistemeKayitEkle.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -127,11 +133,17 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Admin_BolumEkle.resx">
+      <DependentUpon>Admin_BolumEkle.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Admin_SistemeKayitEkle.resx">
       <DependentUpon>Admin_SistemeKayitEkle.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AnaMenu_Admin.resx">
       <DependentUpon>AnaMenu_Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnaMenu_Memur.resx">
+      <DependentUpon>AnaMenu_Memur.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GirisYap.resx">
       <DependentUpon>GirisYap.cs</DependentUpon>

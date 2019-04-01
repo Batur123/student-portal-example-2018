@@ -35,5 +35,17 @@ namespace GB_Student_Portal
             a.Show();
             this.Hide();
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Admin_BolumEkle a = new Admin_BolumEkle();
+            a.Show();
+            this.Hide();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
