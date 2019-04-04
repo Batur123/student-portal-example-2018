@@ -1,6 +1,6 @@
 ﻿namespace GB_Student_Portal
 {
-    partial class Admin_KayitlariGoster
+    partial class Memur_OgrenciBelgesi
     {
         /// <summary>
         /// Required designer variable.
@@ -28,17 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.SuspendLayout();
-            // 
-            // Admin_KayitlariGoster
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1189, 633);
-            this.Name = "Admin_KayitlariGoster";
-            this.Text = "Admin_KayitGoster";
-            this.ResumeLayout(false);
-
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Text = "Memur_OgrenciBelgesi";
         }
 
         #endregion

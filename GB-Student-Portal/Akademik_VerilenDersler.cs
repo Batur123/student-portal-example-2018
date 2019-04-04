@@ -10,18 +10,11 @@ using System.Windows.Forms;
 
 namespace GB_Student_Portal
 {
-    public partial class AnaMenu_Memur : Form
+    public partial class Akademik_VerilenDersler : Form
     {
-        public AnaMenu_Memur()
+        public Akademik_VerilenDersler()
         {
             InitializeComponent();
         }
-
-        private void AnaMenu_Memur_Load(object sender, EventArgs e)
-        {
-
-        }
-
-
     }
 }

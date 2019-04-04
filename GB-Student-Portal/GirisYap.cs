@@ -34,10 +34,6 @@ namespace GB_Student_Portal
 
         }
 
-        private void AdminButon_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void GirisButon_Click(object sender, EventArgs e)
         {

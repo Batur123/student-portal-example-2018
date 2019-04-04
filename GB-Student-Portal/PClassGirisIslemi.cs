@@ -60,16 +60,16 @@ namespace GB_Student_Portal
             Class_Akademisyen kisi = null;
             try
             {
-                var giriskontrol = db.AdminTablo.Where(kisi22 => kisi22.AdminKullaniciAdi == KullaniciAdi && kisi22.AdminSifre == Sifre).FirstOrDefault(); //Girişi kontrol eder.
+                var giriskontrol = db.AkademisyenTablo.Where(kisi22 => kisi22.AKullaniciAd == KullaniciAdi && kisi22.ASifre == Sifre).FirstOrDefault(); //Girişi kontrol eder.
                 
                 if (giriskontrol != null) //Giriş doğru ise bu kısım çalışır.
                 {
-                    var Secim222 = from p in db.AdminTablo
-                                   where p.AdminKullaniciAdi == KullaniciAdi
+                    var Secim222 = from p in db.AkademisyenTablo
+                                   where p.AKullaniciAd == KullaniciAdi
                                    select new
                                    {
-                                       KAD = p.AdminKullaniciAdi,
-                                       KSIFRE = p.AdminSifre,
+                                       KAD = p.AKullaniciAd,
+                                       KSIFRE = p.ASifre,
                                    };
 
                     foreach (var text in Secim222.ToList())
@@ -80,7 +80,7 @@ namespace GB_Student_Portal
                     }
 
                     MessageBox.Show("Başarıyla giriş yaptınız! Yönetici paneline yönlendiriliyorsunuz...");
-                    AnaMenu_Admin a = new AnaMenu_Admin();
+                    AnaMenu_Akademisyen a = new AnaMenu_Akademisyen();
                     a.Show();
                 }
                 else
@@ -97,21 +97,21 @@ namespace GB_Student_Portal
             return kisi;
         }
 
-        public Class_Ogrenci OgrenciGiris(string KullaniciAdi, string Sifre) //Öğrenci Gİrişi
+        public Class_Ogrenci OgrenciGiris(string OgrenciNO, string Sifre) //Öğrenci Gİrişi
         {
             Class_Ogrenci kisi = null;
             try
             {
-                var giriskontrol = db.AdminTablo.Where(kisi22 => kisi22.AdminKullaniciAdi == KullaniciAdi && kisi22.AdminSifre == Sifre).FirstOrDefault(); //Girişi kontrol eder.
+                var giriskontrol = db.OgrenciTablo.Where(kisi22 => kisi22.ONumara == OgrenciNO && kisi22.OSifre == Sifre).FirstOrDefault(); //Girişi kontrol eder.
 
                 if (giriskontrol != null) //Giriş doğru ise bu kısım çalışır.
                 {
-                    var Secim222 = from p in db.AdminTablo
-                                   where p.AdminKullaniciAdi == KullaniciAdi
+                    var Secim222 = from p in db.OgrenciTablo
+                                   where p.ONumara == OgrenciNO
                                    select new
                                    {
-                                       KAD = p.AdminKullaniciAdi,
-                                       KSIFRE = p.AdminSifre,
+                                       KAD = p.ONumara,
+                                       KSIFRE = p.OSifre,
                                    };
 
                     foreach (var text in Secim222.ToList())
@@ -122,12 +122,12 @@ namespace GB_Student_Portal
                     }
 
                     MessageBox.Show("Başarıyla giriş yaptınız! Yönetici paneline yönlendiriliyorsunuz...");
-                    AnaMenu_Admin a = new AnaMenu_Admin();
+                    AnaMenu_Ogrenci a = new AnaMenu_Ogrenci();
                     a.Show();
                 }
                 else
                 {
-                    MessageBox.Show("Kullanıcı adı veya şifrenizi yanlış girdiniz. Lütfen tekrar deneyiniz.");
+                    MessageBox.Show("Öğrenci numaranızı veya şifrenizi yanlış girdiniz. Lütfen tekrar deneyiniz.");
                 }
 
             }
@@ -144,16 +144,16 @@ namespace GB_Student_Portal
             Class_Memur kisi = null;
             try
             {
-                var giriskontrol = db.AdminTablo.Where(kisi22 => kisi22.AdminKullaniciAdi == KullaniciAdi && kisi22.AdminSifre == Sifre).FirstOrDefault(); //Girişi kontrol eder.
+                var giriskontrol = db.GorevliMemur.Where(kisi22 => kisi22.GKullaniciAd == KullaniciAdi && kisi22.GSifre == Sifre).FirstOrDefault(); //Girişi kontrol eder.
 
                 if (giriskontrol != null) //Giriş doğru ise bu kısım çalışır.
                 {
-                    var Secim222 = from p in db.AdminTablo
-                                   where p.AdminKullaniciAdi == KullaniciAdi
+                    var Secim222 = from p in db.GorevliMemur
+                                   where p.GKullaniciAd == KullaniciAdi
                                    select new
                                    {
-                                       KAD = p.AdminKullaniciAdi,
-                                       KSIFRE = p.AdminSifre,
+                                       KAD = p.GKullaniciAd,
+                                       KSIFRE = p.GSifre,
                                    };
 
                     foreach (var text in Secim222.ToList())
@@ -164,7 +164,7 @@ namespace GB_Student_Portal
                     }
 
                     MessageBox.Show("Başarıyla giriş yaptınız! Yönetici paneline yönlendiriliyorsunuz...");
-                    AnaMenu_Admin a = new AnaMenu_Admin();
+                    AnaMenu_Memur a = new AnaMenu_Memur();
                     a.Show();
                 }
                 else

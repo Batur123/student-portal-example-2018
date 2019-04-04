@@ -71,6 +71,30 @@
     <Compile Include="Admin_KayitlariGoster.Designer.cs">
       <DependentUpon>Admin_KayitlariGoster.cs</DependentUpon>
     </Compile>
+    <Compile Include="Akademik_NotGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Akademik_NotGiris.Designer.cs">
+      <DependentUpon>Akademik_NotGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Akademik_OgrenciGoruntule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Akademik_OgrenciGoruntule.Designer.cs">
+      <DependentUpon>Akademik_OgrenciGoruntule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Akademik_SifreDegis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Akademik_SifreDegis.Designer.cs">
+      <DependentUpon>Akademik_SifreDegis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Akademik_VerilenDersler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Akademik_VerilenDersler.Designer.cs">
+      <DependentUpon>Akademik_VerilenDersler.cs</DependentUpon>
+    </Compile>
     <Compile Include="AnaMenu_Admin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -118,6 +142,30 @@
       <DependentUpon>DersKaydi_Ogrenci.cs</DependentUpon>
     </Compile>
     <Compile Include="Class_Kullanici.cs" />
+    <Compile Include="Memur_OgrenciBelgesi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Memur_OgrenciBelgesi.Designer.cs">
+      <DependentUpon>Memur_OgrenciBelgesi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Memur_OgrenciHarc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Memur_OgrenciHarc.Designer.cs">
+      <DependentUpon>Memur_OgrenciHarc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Memur_OgrenciKayit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Memur_OgrenciKayit.Designer.cs">
+      <DependentUpon>Memur_OgrenciKayit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Memur_OgrenciTranskript.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Memur_OgrenciTranskript.Designer.cs">
+      <DependentUpon>Memur_OgrenciTranskript.cs</DependentUpon>
+    </Compile>
     <Compile Include="PClassGirisIslemi.cs" />
     <Compile Include="VeritabaniOlusturma.cs">
       <SubType>Form</SubType>
@@ -136,17 +184,32 @@
     <EmbeddedResource Include="Admin_BolumEkle.resx">
       <DependentUpon>Admin_BolumEkle.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Admin_KayitlariGoster.resx">
+      <DependentUpon>Admin_KayitlariGoster.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Admin_SistemeKayitEkle.resx">
       <DependentUpon>Admin_SistemeKayitEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Akademik_NotGiris.resx">
+      <DependentUpon>Akademik_NotGiris.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AnaMenu_Admin.resx">
       <DependentUpon>AnaMenu_Admin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AnaMenu_Akademisyen.resx">
+      <DependentUpon>AnaMenu_Akademisyen.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AnaMenu_Memur.resx">
       <DependentUpon>AnaMenu_Memur.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AnaMenu_Ogrenci.resx">
+      <DependentUpon>AnaMenu_Ogrenci.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GirisYap.resx">
       <DependentUpon>GirisYap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Memur_OgrenciKayit.resx">
+      <DependentUpon>Memur_OgrenciKayit.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="VeritabaniOlusturma.resx">
       <DependentUpon>VeritabaniOlusturma.cs</DependentUpon>

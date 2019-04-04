@@ -38,6 +38,7 @@ namespace GB_Student_Portal
 
         private void hocacheck_CheckedChanged(object sender, EventArgs e)
         {
+
             memurcheck.Checked = false;
   
         }

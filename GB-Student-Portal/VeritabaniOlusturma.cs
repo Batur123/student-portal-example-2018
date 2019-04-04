@@ -36,10 +36,18 @@ namespace GB_Student_Portal
             public string OAd { get; set; }
             public string OSoyad { get; set; }
             public string OTCKimlik { get; set; }
+            public int IkinciOgretim { get; set; }
             public int YetkiNumarasi { get; set; }
             public int DersKaydi { get; set; } // 1= onaylanmamis , 2=taslaga gonderilmis , 3=akademisyen onaylamis , 4=memur onaylamis ve Ders Kaydi onaylanmis
             public int SistemeKayit { get; set; } //1=onaylanmamis , 2=onaylanmis
-
+        }
+        public class Harc
+        {
+            [Key]
+            public string ONumara { get; set; }
+            public int ToplamHarc { get; set; }
+            public int AylikHarc { get; set; }
+            public int OdendiBilgisi { get; set; }
         }
         public class OgrenciNot
         {
