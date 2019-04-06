@@ -193,6 +193,7 @@
             this.ButGirdiCheckBox.Text = "Öğrenci Bütünlemeye Girdi";
             this.ButGirdiCheckBox.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.ButGirdiCheckBox.UseVisualStyleBackColor = true;
+            this.ButGirdiCheckBox.Click += new System.EventHandler(this.ButGirdiCheckBox_Click);
             // 
             // notverbuton
             // 
@@ -207,9 +208,10 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(551, 389);
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.button1.Location = new System.Drawing.Point(352, 253);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(110, 58);
             this.button1.TabIndex = 16;
             this.button1.Text = "Geri Dön";
             this.button1.UseVisualStyleBackColor = true;
@@ -219,7 +221,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(721, 458);
+            this.ClientSize = new System.Drawing.Size(494, 332);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.notverbuton);
             this.Controls.Add(this.ButGirdiCheckBox);

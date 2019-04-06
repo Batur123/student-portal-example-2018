@@ -22,7 +22,7 @@ namespace GB_Student_Portal
             try
             {
 
-             /*   VeritabaniOlusturma.ProjeVeritabani ct = new VeritabaniOlusturma.ProjeVeritabani();
+             /* VeritabaniOlusturma.ProjeVeritabani ct = new VeritabaniOlusturma.ProjeVeritabani();
                 VeritabaniOlusturma.Ogrenci ogr = new VeritabaniOlusturma.Ogrenci
                 {
                     ONumara = KAdiBox.Text, //Öğrenci Numarası
@@ -55,21 +55,62 @@ namespace GB_Student_Portal
 
         private void Akademik_NotGiris_Load(object sender, EventArgs e)
         {
-            VeritabaniOlusturma.ProjeVeritabani db = new VeritabaniOlusturma.ProjeVeritabani();
 
-            var BolumleriGetir = from c in db.BolumTablo
-            select new
+            try
             {
-                Name = c.BolumAd
-            };
+                VeritabaniOlusturma.ProjeVeritabani db = new VeritabaniOlusturma.ProjeVeritabani(); //Database erişimi.
+                //================================================================================================
+                //Bölüm isimlerini Combobox'a Getirme
+                var BolumleriGetir = from c in db.BolumTablo
+                                     select new
+                                     {
+                                         Bolum = c.BolumAd
+                                     };
 
-            Dim q = From a In db.tblCompanies _
-                    Where a.intUserID = _intUserID
-                    Select a
+                BolumCombo.DataSource = BolumleriGetir.ToList(); //BolumleriGetir isimli var query değişkenimizi liste olarak ComboBox'un veri kaynağına aktarılıyor.
+                BolumCombo.DisplayMember = "Bolum"; //Bolum isimli kısım LINQ Query'sinde c.BolumAd olarak belirlenmiştir.
+                BolumCombo.ValueMember = "Bolum";
+                BolumCombo.Text = ""; //Açılışta rastgele bir bölüm seçilmesin diye ComboBox sorgu işleminden sonra temizlenir. Bunun sebebi boş gözükmesi içindir.
+               //Bölüm isimlerini Combobox'a Getirme
+               //================================================================================================
+               //Ders isimlerini Combobox'a Getirme
+                var DersleriGetir = from c in db.DersTablo
+                                    select new
+                                    {
+                                        Ders = c.DersAd
+                                    };
 
-            Me.cboCompany.DataSource = q.ToList()
-            Me.cboCompany.DisplayMember = "vchCompanyName"
-            Me.cboCompany.ValueMember = "intCompanyID"
+                DersCombo.DataSource = DersleriGetir.ToList();
+                DersCombo.DisplayMember = "Ders";
+                DersCombo.ValueMember = "Ders";
+                DersCombo.Text = "";
+                //Ders isimlerini Combobox'a Getirme
+                //================================================================================================
+            }
+            catch (Exception msg)
+            {
+                MessageBox.Show("Bir hata oluştu. \n\n" + msg);
+            }
+            
+        }
+
+        private void ButGirdiCheckBox_Click(object sender, EventArgs e)
+        {
+            if(butBox.ReadOnly == true)
+            {
+                butBox.ReadOnly = false;
+                butBox.Clear();
+            }
+            else if(butBox.ReadOnly == false)
+            {
+                butBox.ReadOnly = true;
+                butBox.Clear();
+            }
+            else
+            {
+                MessageBox.Show("Hata");
+            }
+            
         }
     }
 }
