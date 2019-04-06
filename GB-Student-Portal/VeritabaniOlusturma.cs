@@ -55,6 +55,7 @@ namespace GB_Student_Portal
             public int ID { get; set; }
             public string ONumara { get; set; }
             public int DersID { get; set; }
+            public int BolumID { get; set; }
             public int Vize { get; set; }
             public int Final { get; set; }
             public int Butunleme { get; set; }
@@ -217,6 +218,11 @@ namespace GB_Student_Portal
                 timer1.Stop();
 
             }
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -17,28 +17,98 @@ namespace GB_Student_Portal
             InitializeComponent();
         }
 
+        public static int BolumNumarasi;
+
         private void notverbuton_Click(object sender, EventArgs e)
         {
+            VeritabaniOlusturma.ProjeVeritabani db = new VeritabaniOlusturma.ProjeVeritabani();
+
+            int Vize, Final,Butunleme;
+            double Ortalama;
+            Vize = Convert.ToInt32(vizeBox.Text); //TextBox'a gelen verileri değişkenlere atayıp ortalama hesaplar.
+            Final = Convert.ToInt32(finalBox.Text);
+            Ortalama = Vize * 0.4 + Final * 0.6; //Ortalama Vize %40 , Final %60'ı alınır.
+
             try
             {
-
-             /* VeritabaniOlusturma.ProjeVeritabani ct = new VeritabaniOlusturma.ProjeVeritabani();
-                VeritabaniOlusturma.Ogrenci ogr = new VeritabaniOlusturma.Ogrenci
+                if (db.BolumTablo.Any(u => u.BolumAd == BolumCombo.Text)) //ComboBoxta seçilen bölüm sistemde var mı diye kontrol eder.
                 {
-                    ONumara = KAdiBox.Text, //Öğrenci Numarası
-                    OSifre = soyisimbox.Text, //Şifre
-                    OAd = KAdiBox.Text, //Adı
-                    OSoyad = KSifreBox.Text, //Soyadı
-                    SistemeKayit = 1, //Sisteme Kayıt Edildi.
-                    DersKaydi = 0, // 0: Ders Kaydı Yapılmamış.
-                    IkinciOgretim = 0 //0: Birinci Öğretim 1: İkinci Öğretim
+                    if (db.OgrenciNotTablo.Any(u => u.ONumara == ognoTextBox.Text)) //Öğrenciye girilen not ve dersi daha önce girilmişmi diye kontrol eder. Eğer girilmişse Güncellenir, girilmemişse ilk defa insert edilir.
+                    {
+                                           
+                            var notguncelle =
+                            from not in db.OgrenciNotTablo
+                            where not.ONumara == ognoTextBox.Text /*&& ord.DersID == Convert.ToInt32(DersCombo.Text)*/
+                            select not;
 
-                };
+                        foreach (var not in notguncelle)
+                        {
+                            not.Vize = Convert.ToInt32(vizeBox.Text);
+                            not.Final = Convert.ToInt32(finalBox.Text);
+                            not.BolumID = BolumNumarasi;
+                            //ord.Final = 2;
+                            
+                        }
+                        try
+                        {
+                            db.SaveChanges();
+                        }
+                        catch(Exception ex)
+                        {
+                            MessageBox.Show("Bir hata oluştuç \n\n "+ ex);
+                        }
 
-                ct.OgrenciTablo.Add(ogr);
-                ct.SaveChanges(); */
+                        //=======================================
+                        var BolumKontrol2 = db.BolumTablo.Where(bolum1 => bolum1.BolumAd == BolumCombo.Text).FirstOrDefault(); //Girişi kontrol eder.
 
-                MessageBox.Show("Öğrenci kayıt işleminiz başarıyla tamamlandı.");
+                        if (BolumKontrol2 != null) //Böyle bir bölüm varsa çalışsın
+                        {
+                            var BolumeAta = from p in db.BolumTablo
+                                           where p.BolumAd == BolumCombo.Text
+                                           select new
+                                           {
+                                               BolumID1 = p.BolumID,      
+                                           };
+
+                            foreach (var text in BolumeAta.ToList())
+                            {
+                                BolumNumarasi = text.BolumID1;
+                            }
+
+                        }
+                        else
+                        {
+                            MessageBox.Show("Bölüm yok?");
+                        }
+                        //====================================
+
+
+
+
+                    }
+                    else
+                    {
+
+                        VeritabaniOlusturma.OgrenciNot ogr = new VeritabaniOlusturma.OgrenciNot
+                        {
+                            ONumara = ognoTextBox.Text, //Öğrenci Numarası
+                            Vize = Convert.ToInt32(vizeBox.Text),
+                            Final = Convert.ToInt32(finalBox.Text),
+                            //Ortalama = Convert.ToInt32(ortBox.Text),
+                            //  DersID = DersCombo.SelectedIndex,
+                        };
+
+                        db.OgrenciNotTablo.Add(ogr);
+                        db.SaveChanges();
+
+                        MessageBox.Show("Not kaydı yapıldı.");
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Böyle bir bölüm bulunmamaktadır. Lütfen tekrar deneyiniz");
+                }               
+                
             }
             catch (Exception ex) //Exception yakalama...
             {
@@ -112,5 +182,6 @@ namespace GB_Student_Portal
             }
             
         }
+
     }
 }
