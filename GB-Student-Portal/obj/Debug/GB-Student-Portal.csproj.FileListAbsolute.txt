@@ -41,3 +41,4 @@ C:\Users\badgo\Desktop\Bitmemiş Projeler C#\GB-Student.Portal\GB-Student-Portal
 C:\Users\badgo\Desktop\Bitmemiş Projeler C#\GB-Student.Portal\GB-Student-Portal\GB-Student-Portal\obj\Debug\GB_Student_Portal.AnaMenu_Akademisyen.resources
 C:\Users\badgo\Desktop\Bitmemiş Projeler C#\GB-Student.Portal\GB-Student-Portal\GB-Student-Portal\obj\Debug\GB_Student_Portal.AnaMenu_Ogrenci.resources
 C:\Users\badgo\Desktop\Bitmemiş Projeler C#\GB-Student.Portal\GB-Student-Portal\GB-Student-Portal\obj\Debug\GB_Student_Portal.Akademik_NotGiris.resources
+C:\Users\badgo\Desktop\Bitmemiş Projeler C#\GB-Student.Portal\GB-Student-Portal\GB-Student-Portal\obj\Debug\GB_Student_Portal.Admin_DersEkle.resources

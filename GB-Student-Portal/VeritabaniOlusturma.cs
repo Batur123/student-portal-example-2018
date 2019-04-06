@@ -93,8 +93,10 @@ namespace GB_Student_Portal
             [Key]
             public int DersID { get; set; }
             public string DersAd { get; set; }
-            public string OgretimID { get; set; }
-            public string BolumID { get; set; }
+            public int OgretimID { get; set; }
+            public int BolumID { get; set; }
+            public int DersKredisi { get; set; }
+            
         }
 
         public class Bolum

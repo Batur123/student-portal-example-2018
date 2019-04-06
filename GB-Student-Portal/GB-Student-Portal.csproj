@@ -59,6 +59,12 @@
     <Compile Include="Admin_BolumEkle.Designer.cs">
       <DependentUpon>Admin_BolumEkle.cs</DependentUpon>
     </Compile>
+    <Compile Include="Admin_DersEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_DersEkle.Designer.cs">
+      <DependentUpon>Admin_DersEkle.cs</DependentUpon>
+    </Compile>
     <Compile Include="Admin_SistemeKayitEkle.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -183,6 +189,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Admin_BolumEkle.resx">
       <DependentUpon>Admin_BolumEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_DersEkle.resx">
+      <DependentUpon>Admin_DersEkle.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Admin_KayitlariGoster.resx">
       <DependentUpon>Admin_KayitlariGoster.cs</DependentUpon>
