@@ -13,5 +13,5 @@ LINQ to SQL Tools
 Batuhan Özkoç
 Yunus Emre Ayar
 
-Güncelleme Tarihi: 08.04.2019 Saat: 00:21
+Güncelleme Tarihi: 08.04.2019 Saat: 00:21.
 
