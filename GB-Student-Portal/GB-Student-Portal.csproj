@@ -53,6 +53,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AClass_NotGirme.cs" />
     <Compile Include="Admin_BolumEkle.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -127,7 +128,10 @@
     </Compile>
     <Compile Include="Class_Admin.cs" />
     <Compile Include="Class_Akademisyen.cs" />
+    <Compile Include="Class_Bolum.cs" />
+    <Compile Include="Class_Ders.cs" />
     <Compile Include="Class_Memur.cs" />
+    <Compile Include="Class_Not.cs" />
     <Compile Include="Class_Ogrenci.cs" />
     <Compile Include="DersKaydi_Akademisyen.cs">
       <SubType>Form</SubType>
@@ -172,7 +176,7 @@
     <Compile Include="Memur_OgrenciTranskript.Designer.cs">
       <DependentUpon>Memur_OgrenciTranskript.cs</DependentUpon>
     </Compile>
-    <Compile Include="PClassGirisIslemi.cs" />
+    <Compile Include="AClass_GirisYapma.cs" />
     <Compile Include="VeritabaniOlusturma.cs">
       <SubType>Form</SubType>
     </Compile>

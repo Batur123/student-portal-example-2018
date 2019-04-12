@@ -22,7 +22,7 @@ namespace GB_Student_Portal
         public Class_Ogrenci ogrenciuser;
         public Class_Memur memuruser;
 
-        public PClassGirisIslemi islem;
+        public AClass_GirisYapma islem;
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
@@ -51,7 +51,7 @@ namespace GB_Student_Portal
 
                     try
                     {
-                        islem = new PClassGirisIslemi();
+                        islem = new AClass_GirisYapma();
                         ogrenciuser = islem.OgrenciGiris(KAdiBox.Text, KSifreBox.Text);
                         //this.Hide();
                         if (ogrenciuser != null)
@@ -70,7 +70,7 @@ namespace GB_Student_Portal
 
                     try
                     {
-                        islem = new PClassGirisIslemi();
+                        islem = new AClass_GirisYapma();
                         akademiuser = islem.AkademiGiris(KAdiBox.Text, KSifreBox.Text);
                         //this.Hide();
                         if (akademiuser != null)
@@ -89,7 +89,7 @@ namespace GB_Student_Portal
 
                     try
                     {
-                        islem = new PClassGirisIslemi();
+                        islem = new AClass_GirisYapma();
                         memuruser = islem.MemurGiris(KAdiBox.Text, KSifreBox.Text);
                         //this.Hide();
                         if (memuruser != null)
@@ -108,7 +108,7 @@ namespace GB_Student_Portal
                     
                     try
                     {
-                        islem = new PClassGirisIslemi();
+                        islem = new AClass_GirisYapma();
                         adminuser = islem.AdminGiris(KAdiBox.Text, KSifreBox.Text);
                         //this.Hide();
                         if (adminuser != null)
