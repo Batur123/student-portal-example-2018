@@ -45,6 +45,7 @@
             this.ButGirdiCheckBox = new System.Windows.Forms.CheckBox();
             this.notverbuton = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.label8 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // BolumCombo
@@ -217,11 +218,21 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(10, 310);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(198, 13);
+            this.label8.TabIndex = 17;
+            this.label8.Text = "Ek Not: Programın en zor kısmı burasıydı.";
+            // 
             // Akademik_NotGiris
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(494, 332);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.notverbuton);
             this.Controls.Add(this.ButGirdiCheckBox);
@@ -266,5 +277,6 @@
         private System.Windows.Forms.CheckBox ButGirdiCheckBox;
         private System.Windows.Forms.Button notverbuton;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label8;
     }
 }
