@@ -46,6 +46,7 @@
             this.notverbuton = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
+            this.ogrenciCombo = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // BolumCombo
@@ -227,11 +228,21 @@
             this.label8.TabIndex = 17;
             this.label8.Text = "Ek Not: Programın en zor kısmı burasıydı.";
             // 
+            // ogrenciCombo
+            // 
+            this.ogrenciCombo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.ogrenciCombo.FormattingEnabled = true;
+            this.ogrenciCombo.Location = new System.Drawing.Point(380, 407);
+            this.ogrenciCombo.Name = "ogrenciCombo";
+            this.ogrenciCombo.Size = new System.Drawing.Size(344, 28);
+            this.ogrenciCombo.TabIndex = 18;
+            // 
             // Akademik_NotGiris
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(494, 332);
+            this.ClientSize = new System.Drawing.Size(1032, 626);
+            this.Controls.Add(this.ogrenciCombo);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.notverbuton);
@@ -278,5 +289,6 @@
         private System.Windows.Forms.Button notverbuton;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.ComboBox ogrenciCombo;
     }
 }
