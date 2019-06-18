@@ -39,7 +39,7 @@ namespace GB_Student_Portal
                             SistemeKayit = 1, //Sisteme Kayıt Edildi.
                             DersKaydi = 0, // 0: Ders Kaydı Yapılmamış.
                             IkinciOgretim = 0, //0: Birinci Öğretim 1: İkinci Öğretim
-                            b
+                            
 
                         };
 

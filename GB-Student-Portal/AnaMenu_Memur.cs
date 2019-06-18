@@ -22,6 +22,51 @@ namespace GB_Student_Portal
 
         }
 
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
 
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            Genel_GirisYapEkrani a = new Genel_GirisYapEkrani();
+            a.Show();
+            this.Hide();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Memur_OgrenciTranskript a = new Memur_OgrenciTranskript();
+            a.Show();
+            this.Hide();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Memur_OgrenciKayit a = new Memur_OgrenciKayit();
+            a.Show();
+            this.Hide();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            DersKaydi_Memur a = new DersKaydi_Memur();
+            a.Show();
+            this.Hide();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Memur_OgrenciBelgesi a = new Memur_OgrenciBelgesi();
+            a.Show();
+            this.Hide();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            Memur_OgrenciHarc a = new Memur_OgrenciHarc();
+            a.Show();
+            this.Hide();
+        }
     }
 }

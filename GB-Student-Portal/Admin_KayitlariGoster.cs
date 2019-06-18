@@ -16,5 +16,15 @@ namespace GB_Student_Portal
         {
             InitializeComponent();
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            AnaMenu_Admin a = new AnaMenu_Admin();
+        }
     }
 }

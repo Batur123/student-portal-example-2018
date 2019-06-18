@@ -183,11 +183,11 @@
     <Compile Include="VeritabaniOlusturma.Designer.cs">
       <DependentUpon>VeritabaniOlusturma.cs</DependentUpon>
     </Compile>
-    <Compile Include="GirisYap.cs">
+    <Compile Include="Genel_GirisYapEkrani.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GirisYap.Designer.cs">
-      <DependentUpon>GirisYap.cs</DependentUpon>
+    <Compile Include="Genel_GirisYapEkrani.Designer.cs">
+      <DependentUpon>Genel_GirisYapEkrani.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -206,6 +206,15 @@
     <EmbeddedResource Include="Akademik_NotGiris.resx">
       <DependentUpon>Akademik_NotGiris.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Akademik_OgrenciGoruntule.resx">
+      <DependentUpon>Akademik_OgrenciGoruntule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Akademik_SifreDegis.resx">
+      <DependentUpon>Akademik_SifreDegis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Akademik_VerilenDersler.resx">
+      <DependentUpon>Akademik_VerilenDersler.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AnaMenu_Admin.resx">
       <DependentUpon>AnaMenu_Admin.cs</DependentUpon>
     </EmbeddedResource>
@@ -218,8 +227,17 @@
     <EmbeddedResource Include="AnaMenu_Ogrenci.resx">
       <DependentUpon>AnaMenu_Ogrenci.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GirisYap.resx">
-      <DependentUpon>GirisYap.cs</DependentUpon>
+    <EmbeddedResource Include="DersKaydi_Akademisyen.resx">
+      <DependentUpon>DersKaydi_Akademisyen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DersKaydi_Memur.resx">
+      <DependentUpon>DersKaydi_Memur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DersKaydi_Ogrenci.resx">
+      <DependentUpon>DersKaydi_Ogrenci.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Genel_GirisYapEkrani.resx">
+      <DependentUpon>Genel_GirisYapEkrani.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Memur_OgrenciKayit.resx">
       <DependentUpon>Memur_OgrenciKayit.cs</DependentUpon>
@@ -253,6 +271,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Bozok_Üniversitesi.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\geridon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hakkinda1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kapat1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2ujl5cl.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

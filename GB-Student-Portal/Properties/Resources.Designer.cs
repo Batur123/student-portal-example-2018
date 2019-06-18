@@ -63,9 +63,49 @@ namespace GB_Student_Portal.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
         /// </summary>
+        internal static System.Drawing.Bitmap _2ujl5cl {
+            get {
+                object obj = ResourceManager.GetObject("2ujl5cl", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
         internal static System.Drawing.Bitmap Bozok_Üniversitesi {
             get {
                 object obj = ResourceManager.GetObject("Bozok_Üniversitesi", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap geridon {
+            get {
+                object obj = ResourceManager.GetObject("geridon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap hakkinda {
+            get {
+                object obj = ResourceManager.GetObject("hakkinda", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap kapat {
+            get {
+                object obj = ResourceManager.GetObject("kapat", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

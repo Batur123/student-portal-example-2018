@@ -123,5 +123,17 @@ namespace GB_Student_Portal
                 MessageBox.Show("Lütfen Akademisyen veya Memur seçim kısmını boş bırakmayınız.");
             }
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            AnaMenu_Admin a = new AnaMenu_Admin();
+            a.Show();
+            this.Hide();
+        }
     }
 }

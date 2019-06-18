@@ -16,7 +16,7 @@ namespace GB_Student_Portal
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Memur_OgrenciKayit());
+            Application.Run(new Genel_GirisYapEkrani());
         }
     }
 }

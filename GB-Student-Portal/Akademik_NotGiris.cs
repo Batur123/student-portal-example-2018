@@ -159,5 +159,118 @@ namespace GB_Student_Portal
             
         }
 
+        private void BolumCombo_SelectedValueChanged(object sender, EventArgs e)
+        {
+            string BolumAdi;
+            int BolumNOO;
+
+            BolumAdi = BolumCombo.SelectedText;
+        
+            VeritabaniOlusturma.ProjeVeritabani db = new VeritabaniOlusturma.ProjeVeritabani();
+            Class_Bolum a = new Class_Bolum();
+
+          //  a.BolumIsmi = BolumAdi;
+          //  BolumAD = BolumAdi;
+
+            var BolumIDOgren = from p in db.BolumTablo //Bölüm Adını alıp ID'sini öğrenme
+                               where p.BolumAd == BolumAdi
+                               select new
+                               {
+                                   BolumID1 = p.BolumID, //Öğrenilen ID'yi aktarma. Bir yere aktarıyor işte
+                               };
+
+            foreach (var text in BolumIDOgren.ToList())
+            {
+                
+                BolumNOO = text.BolumID1;
+
+
+            }
+
+            //Öğrencileri seçilen bölüme göre gösterme fonk.
+           /* var OgrenciGetir = from c in db.OgrenciTablo
+                                 select new
+                                 {
+                                     Ogrenci = c.BolumID
+                                 };
+
+            ogrenciCombo.DataSource = OgrenciGetir.ToList(); //BolumleriGetir isimli var query değişkenimizi liste olarak ComboBox'un veri kaynağına aktarılıyor.
+            ogrenciCombo.DisplayMember = "Ogrenci"; //Bolum isimli kısım LINQ Query'sinde c.BolumAd olarak belirlenmiştir.
+            ogrenciCombo.ValueMember = "Ogrenci";
+            ogrenciCombo.Text = ""; */
+
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            AnaMenu_Akademisyen a = new AnaMenu_Akademisyen();
+            a.Show();
+            this.Hide();
+        }
+
+        private void vizeBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) &&
+       (e.KeyChar != '.'))
+            {
+                e.Handled = true;
+            }
+
+            // only allow one decimal point
+            if ((e.KeyChar == '.') && ((sender as TextBox).Text.IndexOf('.') > -1))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void finalBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) &&
+       (e.KeyChar != '.'))
+            {
+                e.Handled = true;
+            }
+
+            // only allow one decimal point
+            if ((e.KeyChar == '.') && ((sender as TextBox).Text.IndexOf('.') > -1))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void butBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) &&
+       (e.KeyChar != '.'))
+            {
+                e.Handled = true;
+            }
+
+            // only allow one decimal point
+            if ((e.KeyChar == '.') && ((sender as TextBox).Text.IndexOf('.') > -1))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void ognoTextBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) &&
+       (e.KeyChar != '.'))
+            {
+                e.Handled = true;
+            }
+
+            // only allow one decimal point
+            if ((e.KeyChar == '.') && ((sender as TextBox).Text.IndexOf('.') > -1))
+            {
+                e.Handled = true;
+            }
+        }
     }
 }

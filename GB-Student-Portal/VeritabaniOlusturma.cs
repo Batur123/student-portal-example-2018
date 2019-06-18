@@ -36,6 +36,7 @@ namespace GB_Student_Portal
             public string OAd { get; set; }
             public string OSoyad { get; set; }
             public string OTCKimlik { get; set; }
+            public int BolumID { get; set; }
             public int IkinciOgretim { get; set; }
             public int YetkiNumarasi { get; set; }
             public int DersKaydi { get; set; } // 1= onaylanmamis , 2=taslaga gonderilmis , 3=akademisyen onaylamis , 4=memur onaylamis ve Ders Kaydi onaylanmis
@@ -148,7 +149,7 @@ namespace GB_Student_Portal
 
         private void createdatabase()
         {
-            GirisYap ac = new GirisYap();
+            Genel_GirisYapEkrani ac = new Genel_GirisYapEkrani();
             
             using (var dbContext = new ProjeVeritabani())
             {
