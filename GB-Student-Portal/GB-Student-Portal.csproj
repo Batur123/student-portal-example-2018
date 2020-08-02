@@ -53,196 +53,196 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AClass_NotGirme.cs" />
-    <Compile Include="Admin_BolumEkle.cs">
+    <Compile Include="Classlar\AClass_NotGirme.cs" />
+    <Compile Include="Admin\Admin_BolumEkle.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Admin_BolumEkle.Designer.cs">
+    <Compile Include="Admin\Admin_BolumEkle.Designer.cs">
       <DependentUpon>Admin_BolumEkle.cs</DependentUpon>
     </Compile>
-    <Compile Include="Admin_DersEkle.cs">
+    <Compile Include="Admin\Admin_DersEkle.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Admin_DersEkle.Designer.cs">
+    <Compile Include="Admin\Admin_DersEkle.Designer.cs">
       <DependentUpon>Admin_DersEkle.cs</DependentUpon>
     </Compile>
-    <Compile Include="Admin_SistemeKayitEkle.cs">
+    <Compile Include="Admin\Admin_SistemeKayitEkle.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Admin_SistemeKayitEkle.Designer.cs">
+    <Compile Include="Admin\Admin_SistemeKayitEkle.Designer.cs">
       <DependentUpon>Admin_SistemeKayitEkle.cs</DependentUpon>
     </Compile>
-    <Compile Include="Admin_KayitlariGoster.cs">
+    <Compile Include="Admin\Admin_KayitlariGoster.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Admin_KayitlariGoster.Designer.cs">
+    <Compile Include="Admin\Admin_KayitlariGoster.Designer.cs">
       <DependentUpon>Admin_KayitlariGoster.cs</DependentUpon>
     </Compile>
-    <Compile Include="Akademik_NotGiris.cs">
+    <Compile Include="Akademisyen\Akademik_NotGiris.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Akademik_NotGiris.Designer.cs">
+    <Compile Include="Akademisyen\Akademik_NotGiris.Designer.cs">
       <DependentUpon>Akademik_NotGiris.cs</DependentUpon>
     </Compile>
-    <Compile Include="Akademik_OgrenciGoruntule.cs">
+    <Compile Include="Akademisyen\Akademik_OgrenciGoruntule.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Akademik_OgrenciGoruntule.Designer.cs">
+    <Compile Include="Akademisyen\Akademik_OgrenciGoruntule.Designer.cs">
       <DependentUpon>Akademik_OgrenciGoruntule.cs</DependentUpon>
     </Compile>
-    <Compile Include="Akademik_SifreDegis.cs">
+    <Compile Include="Akademisyen\Akademik_SifreDegis.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Akademik_SifreDegis.Designer.cs">
+    <Compile Include="Akademisyen\Akademik_SifreDegis.Designer.cs">
       <DependentUpon>Akademik_SifreDegis.cs</DependentUpon>
     </Compile>
-    <Compile Include="Akademik_VerilenDersler.cs">
+    <Compile Include="Akademisyen\Akademik_VerilenDersler.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Akademik_VerilenDersler.Designer.cs">
+    <Compile Include="Akademisyen\Akademik_VerilenDersler.Designer.cs">
       <DependentUpon>Akademik_VerilenDersler.cs</DependentUpon>
     </Compile>
-    <Compile Include="AnaMenu_Admin.cs">
+    <Compile Include="AnaMenu\AnaMenu_Admin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AnaMenu_Admin.Designer.cs">
+    <Compile Include="AnaMenu\AnaMenu_Admin.Designer.cs">
       <DependentUpon>AnaMenu_Admin.cs</DependentUpon>
     </Compile>
-    <Compile Include="AnaMenu_Akademisyen.cs">
+    <Compile Include="AnaMenu\AnaMenu_Akademisyen.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AnaMenu_Akademisyen.Designer.cs">
+    <Compile Include="AnaMenu\AnaMenu_Akademisyen.Designer.cs">
       <DependentUpon>AnaMenu_Akademisyen.cs</DependentUpon>
     </Compile>
-    <Compile Include="AnaMenu_Memur.cs">
+    <Compile Include="AnaMenu\AnaMenu_Memur.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AnaMenu_Memur.Designer.cs">
+    <Compile Include="AnaMenu\AnaMenu_Memur.Designer.cs">
       <DependentUpon>AnaMenu_Memur.cs</DependentUpon>
     </Compile>
-    <Compile Include="AnaMenu_Ogrenci.cs">
+    <Compile Include="AnaMenu\AnaMenu_Ogrenci.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AnaMenu_Ogrenci.Designer.cs">
+    <Compile Include="AnaMenu\AnaMenu_Ogrenci.Designer.cs">
       <DependentUpon>AnaMenu_Ogrenci.cs</DependentUpon>
     </Compile>
-    <Compile Include="Class_Admin.cs" />
-    <Compile Include="Class_Akademisyen.cs" />
-    <Compile Include="Class_Bolum.cs" />
-    <Compile Include="Class_Ders.cs" />
-    <Compile Include="Class_Memur.cs" />
-    <Compile Include="Class_Not.cs" />
-    <Compile Include="Class_Ogrenci.cs" />
-    <Compile Include="DersKaydi_Akademisyen.cs">
+    <Compile Include="Classlar\Class_Admin.cs" />
+    <Compile Include="Classlar\Class_Akademisyen.cs" />
+    <Compile Include="Classlar\Class_Bolum.cs" />
+    <Compile Include="Classlar\Class_Ders.cs" />
+    <Compile Include="Classlar\Class_Memur.cs" />
+    <Compile Include="Classlar\Class_Not.cs" />
+    <Compile Include="Classlar\Class_Ogrenci.cs" />
+    <Compile Include="Islemler\DersKaydi_Akademisyen.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DersKaydi_Akademisyen.Designer.cs">
+    <Compile Include="Islemler\DersKaydi_Akademisyen.Designer.cs">
       <DependentUpon>DersKaydi_Akademisyen.cs</DependentUpon>
     </Compile>
-    <Compile Include="DersKaydi_Memur.cs">
+    <Compile Include="Islemler\DersKaydi_Memur.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DersKaydi_Memur.Designer.cs">
+    <Compile Include="Islemler\DersKaydi_Memur.Designer.cs">
       <DependentUpon>DersKaydi_Memur.cs</DependentUpon>
     </Compile>
-    <Compile Include="DersKaydi_Ogrenci.cs">
+    <Compile Include="Islemler\DersKaydi_Ogrenci.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DersKaydi_Ogrenci.Designer.cs">
+    <Compile Include="Islemler\DersKaydi_Ogrenci.Designer.cs">
       <DependentUpon>DersKaydi_Ogrenci.cs</DependentUpon>
     </Compile>
-    <Compile Include="Class_Kullanici.cs" />
-    <Compile Include="Memur_OgrenciBelgesi.cs">
+    <Compile Include="Classlar\Class_Kullanici.cs" />
+    <Compile Include="Memur\Memur_OgrenciBelgesi.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Memur_OgrenciBelgesi.Designer.cs">
+    <Compile Include="Memur\Memur_OgrenciBelgesi.Designer.cs">
       <DependentUpon>Memur_OgrenciBelgesi.cs</DependentUpon>
     </Compile>
-    <Compile Include="Memur_OgrenciHarc.cs">
+    <Compile Include="Memur\Memur_OgrenciHarc.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Memur_OgrenciHarc.Designer.cs">
+    <Compile Include="Memur\Memur_OgrenciHarc.Designer.cs">
       <DependentUpon>Memur_OgrenciHarc.cs</DependentUpon>
     </Compile>
-    <Compile Include="Memur_OgrenciKayit.cs">
+    <Compile Include="Memur\Memur_OgrenciKayit.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Memur_OgrenciKayit.Designer.cs">
+    <Compile Include="Memur\Memur_OgrenciKayit.Designer.cs">
       <DependentUpon>Memur_OgrenciKayit.cs</DependentUpon>
     </Compile>
-    <Compile Include="Memur_OgrenciTranskript.cs">
+    <Compile Include="Memur\Memur_OgrenciTranskript.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Memur_OgrenciTranskript.Designer.cs">
+    <Compile Include="Memur\Memur_OgrenciTranskript.Designer.cs">
       <DependentUpon>Memur_OgrenciTranskript.cs</DependentUpon>
     </Compile>
-    <Compile Include="AClass_GirisYapma.cs" />
-    <Compile Include="VeritabaniOlusturma.cs">
+    <Compile Include="Classlar\AClass_GirisYapma.cs" />
+    <Compile Include="Database\VeritabaniOlusturma.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="VeritabaniOlusturma.Designer.cs">
+    <Compile Include="Database\VeritabaniOlusturma.Designer.cs">
       <DependentUpon>VeritabaniOlusturma.cs</DependentUpon>
     </Compile>
-    <Compile Include="Genel_GirisYapEkrani.cs">
+    <Compile Include="AnaMenu\Genel_GirisYapEkrani.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Genel_GirisYapEkrani.Designer.cs">
+    <Compile Include="AnaMenu\Genel_GirisYapEkrani.Designer.cs">
       <DependentUpon>Genel_GirisYapEkrani.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Admin_BolumEkle.resx">
+    <EmbeddedResource Include="Admin\Admin_BolumEkle.resx">
       <DependentUpon>Admin_BolumEkle.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Admin_DersEkle.resx">
+    <EmbeddedResource Include="Admin\Admin_DersEkle.resx">
       <DependentUpon>Admin_DersEkle.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Admin_KayitlariGoster.resx">
+    <EmbeddedResource Include="Admin\Admin_KayitlariGoster.resx">
       <DependentUpon>Admin_KayitlariGoster.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Admin_SistemeKayitEkle.resx">
+    <EmbeddedResource Include="Admin\Admin_SistemeKayitEkle.resx">
       <DependentUpon>Admin_SistemeKayitEkle.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Akademik_NotGiris.resx">
+    <EmbeddedResource Include="Akademisyen\Akademik_NotGiris.resx">
       <DependentUpon>Akademik_NotGiris.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Akademik_OgrenciGoruntule.resx">
+    <EmbeddedResource Include="Akademisyen\Akademik_OgrenciGoruntule.resx">
       <DependentUpon>Akademik_OgrenciGoruntule.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Akademik_SifreDegis.resx">
+    <EmbeddedResource Include="Akademisyen\Akademik_SifreDegis.resx">
       <DependentUpon>Akademik_SifreDegis.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Akademik_VerilenDersler.resx">
+    <EmbeddedResource Include="Akademisyen\Akademik_VerilenDersler.resx">
       <DependentUpon>Akademik_VerilenDersler.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AnaMenu_Admin.resx">
+    <EmbeddedResource Include="AnaMenu\AnaMenu_Admin.resx">
       <DependentUpon>AnaMenu_Admin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AnaMenu_Akademisyen.resx">
+    <EmbeddedResource Include="AnaMenu\AnaMenu_Akademisyen.resx">
       <DependentUpon>AnaMenu_Akademisyen.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AnaMenu_Memur.resx">
+    <EmbeddedResource Include="AnaMenu\AnaMenu_Memur.resx">
       <DependentUpon>AnaMenu_Memur.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AnaMenu_Ogrenci.resx">
+    <EmbeddedResource Include="AnaMenu\AnaMenu_Ogrenci.resx">
       <DependentUpon>AnaMenu_Ogrenci.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DersKaydi_Akademisyen.resx">
+    <EmbeddedResource Include="Islemler\DersKaydi_Akademisyen.resx">
       <DependentUpon>DersKaydi_Akademisyen.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DersKaydi_Memur.resx">
+    <EmbeddedResource Include="Islemler\DersKaydi_Memur.resx">
       <DependentUpon>DersKaydi_Memur.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DersKaydi_Ogrenci.resx">
+    <EmbeddedResource Include="Islemler\DersKaydi_Ogrenci.resx">
       <DependentUpon>DersKaydi_Ogrenci.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Genel_GirisYapEkrani.resx">
+    <EmbeddedResource Include="AnaMenu\Genel_GirisYapEkrani.resx">
       <DependentUpon>Genel_GirisYapEkrani.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Memur_OgrenciKayit.resx">
+    <EmbeddedResource Include="Memur\Memur_OgrenciKayit.resx">
       <DependentUpon>Memur_OgrenciKayit.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="VeritabaniOlusturma.resx">
+    <EmbeddedResource Include="Database\VeritabaniOlusturma.resx">
       <DependentUpon>VeritabaniOlusturma.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -284,5 +284,6 @@
   <ItemGroup>
     <None Include="Resources\2ujl5cl.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
