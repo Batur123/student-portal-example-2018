@@ -1,4 +1,4 @@
-# GB-Student-Portal-v2-EntityFramework
+# GB-Student-Portal-v2-EntityFramework (2018)
 # Türkçe
 
 Çalıştırmak için gerekli eklentiler;
